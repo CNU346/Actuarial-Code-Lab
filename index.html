@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actuarial Code Lab | Bridging Theory & Mastery</title>
     <link rel="stylesheet" href="{% static 'CodeLab/style.css' %}">
-    <script src="{% static 'CodeLab/actions.js' %}"></script>
+    <script src="actions.js"></script>
     <!--<script src="{% static 'CodeLab/code.js' %}"></script>-->
 </head>
 <body>
 
     <!-- Navigation -->
     <nav id="navigation">
-        <a href='#container'><img src="{% static 'CodeLab/assets/logo.png'%}" id="logo"></a>
+        <a href='#container'><img src="logo.png" id="logo"></a>
         <div class="nav-links">
             <a href="#packages">PACKAGES</a>
             <a href="#delivery">DELIVERY</a>
@@ -224,7 +223,6 @@
         <h2 class="section-title">START YOUR JOURNEY</h2>
         <div class="form-box">
             <form onsubmit="event.preventDefault(); window.open(`mailto:caviemunyanyi@gmail.com?subject=${document.querySelector('#reqpack').value}&body=Requesting to join ${document.querySelector('#reqpack').value}`);" id="inquiry">
-                {% csrf_token %}
                 <!--<div class="form-group">
                     <label>Name</label>
                     <input type="text" placeholder="Your Name" required name="name">
