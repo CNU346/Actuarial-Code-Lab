@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actuarial Code Lab | Bridging Theory & Mastery</title>
+    <link rel="stylesheet" href="{% static 'CodeLab/style.css' %}">
+    <script src="{% static 'CodeLab/actions.js' %}"></script>
+    <!--<script src="{% static 'CodeLab/code.js' %}"></script>-->
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navigation">
+        <a href='#container'><img src="{% static 'CodeLab/assets/logo.png'%}" id="logo"></a>
+        <div class="nav-links">
+            <a href="#packages">PACKAGES</a>
+            <a href="#delivery">DELIVERY</a>
+            <a href="#team">TUTORS</a>
+            <a href="#contact" class="cta-btn">BOOK SESSION</a>
+        </div>
+    </nav>
+
+    <div id="container">
+        <div id="code" class="boxx">
+            <span id="typed"></span>
+        </div>
+        <div id="content" class="boxx">
+            <!-- Hero Section -->
+            <header>
+                <h1>BRIDGING ACTUARIAL THEORY AND COMPUTATIONAL MASTERY</h1>
+                <p>We don't just teach code; we teach how to solve actuarial problems efficiently and accurately using R, Excel, and Python.</p>
+                <br>
+                <a href="#packages" class="cta-btn" style="font-size: 1.2rem;">EXPLORE COURSES</a>
+            </header>
+        </div>
+    </div>
+
+    <!-- Value Proposition -->
+    <section class="value-prop">
+        <h2>WHY CHOOSE US?</h2>
+        <div class="value-grid">
+            <div class="value-card">
+                <h3>Exam Focused</h3>
+                <p>Tailored specifically for CS1, CS2, CM1, and CM2 exams.</p>
+            </div>
+            <div class="value-card">
+                <h3>Industry Tools</h3>
+                <p>Master the "Big Three": R for Stats, Excel for Finance, Python for Modern Modeling.</p>
+            </div>
+            <div class="value-card">
+                <h3>Flexible Learning</h3>
+                <p>1-on-1, small groups, or weekend intensives to fit your lifestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="packages">
+        <h2 class="section-title">OUR SERVICE PACKAGES</h2>
+        <div class="package-container">
+            
+            <!-- Package A -->
+            <div class="package-card">
+                <div class="pkg-header pkg-a">
+                    <h3>R FOR ACTUARIAL STATISTICS (CS1)</h3>
+                </div>
+                <div class="pkg-body">
+                    <ul>
+                        <li>Data Manipulation & Visualization</li>
+                        <li>Probability Distributions (Normal, Gamma, Poisson, Binomial etc)</li>
+                        <li>Statistical Inference (Hypothesis Testing, Regression, Confidence Intervals)</li>
+                        <li>Past Exam Questions practice</li>
+                    </ul>
+                    <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #eee;">
+                </div>
+                <div class="pkg-price">
+                    <strong>ACTUARIAL CODE LAB</strong>
+                </div>
+            </div>
+
+            <!-- Package B -->
+            <div class="package-card">
+                <div class="pkg-header pkg-a">
+                    <h3>R FOR RISK MODELLING (CS2)</h3>
+                </div>
+                <div class="pkg-body">
+                    <ul>
+                        <li>Stochastic processes (Markov Chains, Poisson Processes)</li>
+                        <li>Survival Models</li>
+                        <li>Time Series</li>
+                        <li>Stochastic Simulation</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                    <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #eee;">
+                </div>
+                <div class="pkg-price">
+                    <strong>ACTUARIAL CODE LAB</strong>
+                </div>
+            </div>
+
+            <!-- Package C -->
+            <div class="package-card">
+                <div class="pkg-header pkg-b">
+                    <h3>MICROSOFT EXCEL FOR FINANCE (CM1)</h3>
+                </div>
+                <div class="pkg-body">
+                    <ul>
+                        <li>Loan & Bond Schedules</li>
+                        <li>Cash Flow Projections</li>
+                        <li>Goal Seek & Data Tables</li>
+                    </ul>
+                    <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #eee;">
+                </div>
+                <div class="pkg-price">
+                   <strong>ACTUARIAL CODE LAB</strong>
+                </div>
+            </div>
+
+            <!-- Package D -->
+            <div class="package-card">
+                <div class="pkg-header pkg-b">
+                    <h3>ADVANCED MICROSOFT EXCEL FOR FINANCE (CM2)</h3>
+                </div>
+                <div class="pkg-body">
+                    <ul>
+                        <li>Stochastic Modeling (RAND, NORM.INV)</li>
+                        <li>Intro to VBA Automation</li>
+                        <li>VaR & Risk Measures</li>
+                    </ul>
+                </div>
+                <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #eee;">
+                <div class="pkg-price">
+                   <strong>ACTUARIAL CODE LAB</strong>
+                </div>
+            </div>
+
+
+            <!-- Package E -->
+            <div class="package-card">
+                <div class="pkg-header pkg-c">
+                    <h3>PYTHON FOUNDATIONS FOR MODERN ACTUARIES</h3>
+                </div>
+                <div class="pkg-body">
+                    <ul>
+                        <li>Python basics (Data types, loops, functions)</li>
+                        <li>Data manipulation (pandas, numpy, matplotlib)</li>
+                        <li>Data wrangling (Cleaning, filtering)</li>
+                    </ul>
+                    <p style="margin-top:1rem; font-size: 0.9rem; color: #666; font-weight: bold;">Includes a Capstone project.</p>
+                    <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #eee;">
+                </div>
+                <div class="pkg-price">
+                    <strong>ACTUARIAL CODE LAB</strong>
+                </div>
+            </div>
+
+            <!-- Package F -->
+            <div class="package-card">
+                <div class="pkg-header pkg-c">
+                    <h3>ADVANCED PYTHON FOR MODERN ACTUARIES</h3>
+                </div>
+                <div class="pkg-body">
+                    <ul>
+                        <li>Statistical modelling (GLMs, machine learning)</li>
+                        <li>Stochastic modelling and reserving (MCMs, capital modelling..)</li>
+                        <li>Claims reserving</li>
+                        <li>Web scrapping (API data pulling, AI agents)</li>
+                    </ul>
+                    <p style="margin-top:1rem; font-size: 0.9rem; color: #666; font-weight: bold;">Includes a Capstone project.</p>
+                    <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #eee;">
+                </div>
+                <div class="pkg-price">
+                    <strong>ACTUARIAL CODE LAB</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Delivery Modes -->
+    <section id="delivery" class="delivery">
+        <h2 class="section-title" style="color: white;">DELIVERY MODES</h2>
+        <div class="delivery-grid">
+            <div class="mode-box">
+                <h3>Online (Primary)</h3>
+                <ul>
+                    <li><strong>One-on-One:</strong> Personalized attention via Zoom/Google Meet.</li>
+                    <li><strong>Small Groups:</strong> 10-20 students, lower cost, peer learning.</li>
+                    <li><strong>Recorded Webinars:</strong> For challenging topics.</li>
+                </ul>
+            </div>
+            <div class="mode-box">
+                <h3>Physical</h3>
+                <ul>
+                    <li><strong>Weekend Lessons:</strong> Intensive coding bootcamps.</li>
+                    <li><strong>Corporate Training:</strong> Training graduate actuaries at local insurance firms.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="team">
+        <h2 class="section-title">MEET YOUR TUTORS</h2>
+        <div class="team-grid">
+            <div class="tutor">
+                <div class="avatar" style="background: #3b82f6;">R</div>
+                <h3>Roderick</h3>
+                <p>Lead Tutor</p>
+            </div>
+            <div class="tutor">
+                <div class="avatar" style="background: #10b981;">C</div>
+                <h3>Calvin</h3>
+                <p>Lead Tutor</p>
+            </div>
+        </div>
+        <p style="margin-top: 2rem; color: #64748b;">ADMINSTERED BY LEARNMORE</p>
+    </section>
+
+    <!-- Contact / Booking -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">START YOUR JOURNEY</h2>
+        <div class="form-box">
+            <form onsubmit="event.preventDefault(); window.open(`mailto:caviemunyanyi@gmail.com?subject=${document.querySelector('#reqpack').value}&body=Requesting to join ${document.querySelector('#reqpack').value}`);" id="inquiry">
+                {% csrf_token %}
+                <!--<div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Name" required name="name">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Your Email" required name="email">
+                </div>-->
+                <div class="form-group">
+                    <label>Please choose the package you're interested in:</label>
+                    <select name="package" id="reqpack">
+                        <option value="R FOR ACTUARIAL STATISTICS (CS1)">R FOR ACTUARIAL STATISTICS (CS1)</option>
+                        <option value="R FOR RISK MODELLING (CS2)">R FOR RISK MODELLING (CS2)</option>
+                        <option value="MICROSOFT EXCEL FOR FINANCE (CM1)">MICROSOFT EXCEL FOR FINANCE (CM1)</option>
+                        <option value="ADVANCED MICROSOFT EXCEL FOR FINANCE (CM2)">ADVANCED MICROSOFT EXCEL FOR FINANCE (CM2)</option>
+                        <option value="PYTHON FOUNDATIONS FOR MODERN ACTUARIES">PYTHON FOUNDATIONS FOR MODERN ACTUARIES</option>
+                        <option value="ADVANCED PYTHON MODERN ACTUARIES">ADVANCED PYTHON MODERN ACTUARIES</option>
+                        <option value="GENERAL INQUIRY">GENERAL INQUIRY</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Request Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Actuarial Code Lab. All rights reserved.</p>
+        <p>Payments processed via Ecocash & Cash Deposits.</p>
+    </footer>
+</body>
+</html>
