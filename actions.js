@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
     document.querySelector('#inquiry').onsubmit = function (){
-        console.log('Calbin');
-        window.open('mailto:caviemunyanyi@gmail.com');
+        let subject = document.querySelector('#reqpack').value;
+        let body = `Good day,
+        I would like to request to be enrolled for the tutorials as indicated in the subject.
+        `;
+        window.open(`mailto:caviemunyanyi@gmail.com?subject=${subject}&body=${body}`);
     }
 })
